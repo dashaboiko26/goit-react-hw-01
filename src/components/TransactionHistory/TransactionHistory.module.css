@@ -1,0 +1,33 @@
+.table {
+    width: 100%;
+    border: 2px solid black;
+    padding: 0;
+    border-collapse: collapse;
+
+    .head {
+        background-color: #2a2a2a;
+        color: white;
+        font-size: 20px;
+        font-weight: 700;
+    }
+
+    tr {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+
+        &:nth-child(2n) {
+            background-color: #d3d3d3;
+        }
+    }
+
+    td,
+    th {
+        border: 1px solid black;
+        text-align: center;
+        font-size: 25px;
+    }
+
+    td:first-child {
+        text-transform: capitalize;
+    }
+}
